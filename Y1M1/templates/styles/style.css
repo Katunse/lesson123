@@ -1,0 +1,47 @@
+/* style.css */
+  body { font-family: Arial, sans-serif; background-color: #f7f7f7; text-align: center; padding-top: 50px; }
+        form { max-width: 300px; margin: auto; padding: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,.1); background-color: white; }
+        label { display: block; margin-bottom: 5px; color: #333; }
+        input[type="text"], input[type="email"], input[type="password"] { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 3px; }
+        button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 3px; cursor: pointer; transition: all .3s ease-in-out; }
+        button:hover { background-color: #0056b3; }
+
+
+h1 {
+  animation-duration: 1s;
+  animation-name: slin;
+  
+}
+
+form {
+  animation-duration: s;
+  animation-name: slin1;
+  
+}
+
+
+@keyframes slin {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slin1 {
+  from {
+    
+    width: 300%;
+  }
+
+  to {
+  
+    width: 100%;
+  }
+}
+
+

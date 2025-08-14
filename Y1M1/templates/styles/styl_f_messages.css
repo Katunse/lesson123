@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Левая колонка фиксированная ширина, правая занимает оставшееся пространство */
+    height: 100%;
+}
+
+#sidebar {
+    background-color: #ffffff;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contacts-list li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+#contacts-list li.active {
+    background-color: #dcf8c6;
+}
+
+#chat-section {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-right: 20px; /* Немного отступ справа для красоты */
+}
+
+#contact-header {
+    padding: 10px;
+    background-color: #eeeeee;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#messages {
+    flex-grow: 1; /* Растяжение на всю высоту доступной области */
+    overflow-y: scroll;
+    padding: 10px;
+}
+
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+}
+
+.incoming-message {
+    background-color: #efefef;
+    float: left;
+}
+
+.outgoing-message {
+    background-color: #dcf8c6;
+    float: right;
+}
+
+#chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    border-top: 1px solid #ddd;
+}
+
+#new-message-input {
+    flex-grow: 1;
+    resize: none;
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+#send-button {
+    padding: 10px 20px;
+    background-color: #0084ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+}
+
+.bottom-left {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #fafafa;
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    font-size: 14px;
+    opacity: 0.9;
+}

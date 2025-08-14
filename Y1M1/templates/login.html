@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вход</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <a href="./register.html"><button>Регистрация на demo</button></a>
+    <h1>Вход</h1>
+    <form action="/login.py" method="POST">
+        <label for="username">Имя пользователя:</label><br>
+        <input type="text" id="username" name="username" required><br>
+        
+        <label for="password">Пароль:</label><br>
+        <input type="password" id="password" name="password" required><br>
+        
+        <button type="submit">Войти</button>
+    </form>
+</body>
+</html>
